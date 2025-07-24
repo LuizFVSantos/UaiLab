@@ -1,260 +1,247 @@
-html{
-    width: 100%;
-    height: 100%;
-}
-body {
+/* --- Estilo base (Desktop) --- */
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    background-image:url("");
+    background-image: url("");
     background-size: cover;
     background-color: #000;
 }
 
 .uailab_intro {
     background-color: #000;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 160px;
-    margin: 0 auto;
 }
 
 .menu_1 a {
     font-family: pixo;
     color: aliceblue;
     padding-left: 50px;
-    text-decoration:none;
-    font-size: 40px;
-    justify-content: center;
+    text-decoration: none;
+    font-size: 2.5vw; 
 }
 
-.social-medias{
+.social-medias {
     margin-top: 90px;
     margin-left: 150px;
 }
-.social-medias a{
-    align-items:end;
+.social-medias a {
     padding-left: 10px;
 }
 
-.news{
+.news, .lancamentos, .space {
     width: 100%;
     height: 150px;
-}
-.lancamentos{
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 150px;
-    position: relative;
+    align-items: center;
     font-family: pixo;
-    font-size: 50px;
+    font-size: 2.5vw;
     color: aliceblue;
 }
-#block-1{
+
+#block-1 {
     width: 100%;
     height: 500px;
     overflow-x: hidden;
 }
-#block-1::-webkit-scrollbar{
+#block-1::-webkit-scrollbar {
     display: none;
 }
-.slider{
+.slider {
     display: flex;
     width: 400%;
     height: 100%;
-    
 }
-.arrow-left, .arrow-right{
-    display: inline-block;
-    position:absolute;
+.arrow-left, .arrow-right {
+    position: absolute;
     height: 500px;
-    background: linear-gradient(to left, transparent 0%, white 300%);
     font-size: 40px;
+    background: linear-gradient(to left, transparent 0%, white 300%);
     border: none;
     cursor: pointer;
     color: rgb(245, 105, 105);
     opacity: 0.3;
 }
-.arrow-right{
-    
+.arrow-right {
     background: linear-gradient(to right, transparent 0%, white 300%);
     right: 0;
 }
-
-.arrow-left:hover, .arrow-right:hover{
+.arrow-left:hover, .arrow-right:hover {
     opacity: 1;
 }
-.elements{
+
+.elements {
     width: 25%;
     height: 100%;
-    transition: ease-in-out;
     scroll-snap-align: start;
 }
 
-.elements a{
+.elements a {
     display: block;
     width: 100%;
     height: 100%;
-    align-content: center;
     text-decoration: none;
-    
 }
 
+/* Fontes */
 @font-face {
     font-family: pixo;
-    src: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Urban Graffiti PERSONAL USE ONLY.ttf") ;
+    src: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Urban Graffiti PERSONAL USE ONLY.ttf");
 }
-
 @font-face {
     font-family: myText;
-    src:url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Aver.ttf")
-  }
+    src: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Aver.ttf");
+}
 
-h1{
+h1 {
     font-family: myText;
     text-align: center;
-    align-content: center;
-    font-size: 60px;
+    font-size: 4vw;
     color: white;
     background: linear-gradient(to top, transparent 0%, black);
-    width: 700px;
-    height: 125px;
+    max-width: 90%;
+    margin: auto;
+    height: auto;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    
-}
-.sub-title{
+.title, .sub-title {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 25%;
-    font-family: myText; 
-    font-size: 25px;
+    font-family: myText;
     color: white;
+    padding: 10px;
+}
+
+.sub-title {
+    font-size: 1.5vw;
     background: linear-gradient(to top, transparent 0%, rgb(247, 72, 72));
-    width: 900px;
-    height: 100px;
-}
-#first-element{
-    background-image: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Pixu.jpg");
-    
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-#second-element{
-    background-image: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/Greggo.jpg");
-    
-}
-#third-element{
-    background-image: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/VITTIM GE.jpg");
-    
-}
-#fourth-element{
-    background-image: url("C:/Users/Luizz/Desktop/Programação/UaiLab/img/DYEFF.jpg");
-    background: cover;
-}
+/* Blocos de imagem */
+#first-element { background-image: url(".../Pixu.jpg"); background-size: cover; }
+#second-element { background-image: url(".../Greggo.jpg"); background-size: cover; }
+#third-element { background-image: url(".../VITTIM GE.jpg"); background-size: cover; }
+#fourth-element { background-image: url(".../DYEFF.jpg"); background-size: cover; }
 
-.space{
-    margin: 0;
-    padding: 0;
+/* Bios */
+.booking {
+    width: 90%;
+    margin: auto;
+}
+.bios {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 150px;
-    position: relative;
-    font-family: pixo;
-    font-size: 50px;
-    color: aliceblue;
 }
-
-.booking{
-    margin: 0;
-    padding: 0;
-    width: 80%;
+.artists {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+.artists img {
+    width: 100%;
     height: auto;
 }
-
-.bios{
-    display: flex;
-    position: relative;
+.bio {
     width: 100%;
-    height: auto;
-    justify-items: center;
-
-}
-.artists{
-    width: 80%;
-    height: 500px;
-    justify-content: center;
-}
-
-.artists img{
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-}
-
-.bio{
-    width: 25%;
-    height: 100px;
-    top: 125px;
+    padding: 10px;
     position: absolute;
-    color: white;
+    top: 0;
     opacity: 0;
-    font-size: 20px;
-    transition: 1s;
-    background: linear-gradient(to top, 0%, rgb(139, 139, 139));
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 1rem;
+    transition: opacity 1s;
 }
-
-.artists:hover{
-    opacity: 0.9;
-}
-
-.artists:hover .bio{
+.artists:hover .bio {
     opacity: 1;
 }
 
-.aboutUs{
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
-    color: white;
+/* About Us */
+.aboutUs {
     display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 90%;
 }
-
-.usImg{
-    justify-items: center;
-}
-.usTitle{
-    padding-left: 22.5%;
+.usTitle {
     font-family: pixo;
-    font-size: 50px;
+    font-size: 3vw;
     color: aliceblue;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-.content{
-    width: 80%;
-    height: 150px;
-    padding-left: 100px;
-    margin-bottom: 100px;
-    color:aliceblue ;
+.content {
+    width: 100%;
+    padding: 10px;
     font-family: arial;
-    font-size: 25px;
+    font-size: 1.2rem;
+    color: aliceblue;
 }
 
-.menu_1 footer{
+/* Footer */
+.menu_1 footer {
     list-style: none;
     display: block;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .menu_1 a {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    .arrow-left, .arrow-right {
+        height: 300px;
+    }
+    .lancamentos, .space {
+        font-size: 6vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .menu_1 a {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .social-medias {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .arrow-left, .arrow-right {
+        height: 200px;
+        font-size: 24px;
+    }
+    .slider {
+        width: 400%;
+        flex-wrap: nowrap;
+    }
+    .elements {
+        width: 100%;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+    .sub-title {
+        font-size: 4vw;
+    }
+    .bio {
+        font-size: 0.9rem;
+    }
+    .usTitle {
+        font-size: 7vw;
+    }
 }
